@@ -1,0 +1,37 @@
+@import "_variables/variables";
+@import "_mixins/mixins";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #ddd;
+}
+// Main
+.main {
+  display: flex;
+  justify-content: center;
+  padding: 4em 5%;
+  // iPhone
+  .iphone {
+    display: flex;
+    width: 90%;
+    height: auto;
+    border: 1em solid #fff;
+    border-radius: 1.5em;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .notch{
+    position: relative;
+    top: -.75em;
+    display: inline-block;
+    width: 60%;
+    height: 2em;
+    background: #fff;
+    border-radius: 1em;
+  }
+}
+.container {
+  @include container();
+}
