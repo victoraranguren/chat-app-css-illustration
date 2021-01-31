@@ -89,19 +89,23 @@ body {
     &-response {
       display: inline-block;
       background: $bg-chat-response;
-      color: $light-violet;
+      color: $moderate-violet;
       max-width: 73%;
-      margin-bottom: .75em;
+      margin-bottom: .75em!important;
       padding: 0.75em;
       font-size: .75rem;
       border-radius: 1em;
+      line-height: 1.5em;
       p{
         margin: 0;
       }
     }
     &-send{
       @extend .chat-response;
-
+      background: #fff;
+      margin: auto;
+      margin-right: 0;
+      color: $desaturated-dark-violet;
     }
     .group-img{
       display: flex;
