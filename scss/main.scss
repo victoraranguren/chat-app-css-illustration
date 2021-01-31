@@ -29,7 +29,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background: linear-gradient(to left, $light-magenta, $light-violet);
+    @include gradient(left);
   }
   .notch {
     position: relative;
@@ -91,23 +91,48 @@ body {
       background: $bg-chat-response;
       color: $moderate-violet;
       max-width: 73%;
-      margin-bottom: .75em!important;
+      margin-bottom: 0.75em !important;
       padding: 0.75em;
-      font-size: .75rem;
+      font-size: 0.75rem;
       border-radius: 1em;
       line-height: 1.5em;
-      p{
+      p {
         margin: 0;
       }
     }
-    &-send{
+    &-check {
+      @extend .chat-response;
+      @include gradient(right);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      color: #fff;
+      max-width: 80%;
+      .box {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        margin-right: 1em;
+      }
+      .time {
+        margin-left: 0;
+        margin-right: auto;
+      }
+      .price{
+        font-weight: 700;
+        font-size: 1.25em;
+      }
+    }
+    &-send {
       @extend .chat-response;
       background: #fff;
       margin: auto;
       margin-right: 0;
       color: $desaturated-dark-violet;
     }
-    .group-img{
+    .group-img {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -115,7 +140,7 @@ body {
       padding: 0;
       margin: auto;
       margin-right: 0;
-      .img{
+      .img {
         display: inline-block;
         width: 30%;
         height: auto;

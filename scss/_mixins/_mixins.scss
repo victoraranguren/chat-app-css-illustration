@@ -1,3 +1,6 @@
 @mixin container {
   width: 90%;
 }
+@mixin gradient($direction){
+  background: linear-gradient(to $direction, $light-magenta, $light-violet);
+}

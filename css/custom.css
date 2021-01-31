@@ -82,7 +82,7 @@ body {
   background: #f5f3f7;
   flex-direction: column;
 }
-.main .chat-response, .main .chat-send {
+.main .chat-response, .main .chat-send, .main .chat-check {
   display: inline-block;
   background: #ece4f1;
   color: #9241c8;
@@ -93,8 +93,32 @@ body {
   border-radius: 1em;
   line-height: 1.5em;
 }
-.main .chat-response p, .main .chat-send p {
+.main .chat-response p, .main .chat-send p, .main .chat-check p {
   margin: 0;
+}
+.main .chat-check {
+  background: linear-gradient(to right, #e942ff, #8838ff);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #fff;
+  max-width: 80%;
+}
+.main .chat-check .box {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin-right: 1em;
+}
+.main .chat-check .time {
+  margin-left: 0;
+  margin-right: auto;
+}
+.main .chat-check .price {
+  font-weight: 700;
+  font-size: 1.25em;
 }
 .main .chat-send {
   background: #fff;
