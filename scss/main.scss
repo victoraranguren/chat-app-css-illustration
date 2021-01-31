@@ -6,6 +6,7 @@
 }
 body {
   background: #ddd;
+  font-family: "Roboto";
 }
 // Main
 .main {
@@ -15,21 +16,69 @@ body {
   // iPhone
   .iphone {
     display: flex;
+    justify-content: center;
+    flex-direction: column;
     width: 90%;
     height: auto;
-    border: 1em solid #fff;
-    border-radius: 1.5em;
-    justify-content: center;
+    border: .75em solid #fff;
+    border-radius: 2em;
     margin: 0 auto;
+    overflow: hidden;
   }
-  .notch{
+  .top {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(to left, $light-magenta, $light-violet);
+  }
+  .notch {
     position: relative;
-    top: -.75em;
+    top: -0.75em;
     display: inline-block;
     width: 60%;
     height: 2em;
     background: #fff;
     border-radius: 1em;
+    margin: auto;
+  }
+  .app-bar {
+    position: relative;
+    top: -0.75em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 5% 0 5%;
+    color: #fff;
+  }
+  .contact {
+    &-img {
+      display: inline-block;
+      width: 2em;
+      height: 2em;
+      border: 0.15rem solid #fff;
+      border-radius: 2em;
+    }
+    &-info {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-self: flex-start;
+      margin-left: .75em;
+    }
+    &-name {
+      display: inline-block;
+      color: #fff;
+      margin: 0;
+      font-weight: 700;
+    }
+    &-status {
+      display: inline-block;
+      margin: 0;
+      font-weight: 300;
+      font-size: .75em;
+    }
   }
 }
 .container {
