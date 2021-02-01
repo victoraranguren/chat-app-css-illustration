@@ -20,7 +20,7 @@ body {
     width: 120%;
     height: 515px;
     display: inline-block;
-    @include gradient(bottom);
+    @include gradient-violet(bottom);
     border-bottom-right-radius:60%;
     border-bottom-left-radius:50%;
     z-index: 10;

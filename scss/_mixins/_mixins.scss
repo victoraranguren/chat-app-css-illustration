@@ -4,3 +4,6 @@
 @mixin gradient($direction){
   background: linear-gradient(to $direction, $light-magenta, $light-violet);
 }
+@mixin gradient-violet($direction){
+  background: linear-gradient(to $direction, $bg-top-main, $light-violet);
+}
