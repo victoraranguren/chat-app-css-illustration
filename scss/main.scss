@@ -147,6 +147,32 @@ body {
         border-radius: 1em;
       }
     }
+    &-input{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+      background: #fff;
+      color: $grayish-blue;
+      padding: .5em .5em .5em 1.25em;
+      font-size: .75em;
+      border-radius: 2em;
+      p{
+        display: inline-block;
+        margin: 0;
+      }
+    }
+    &-submit{
+      display: inline-block;
+      width: 2em;
+      height: 2em;
+      background: $very-dark-desaturated-violet;
+      color: #fff;
+      line-height: 2em;
+      text-align: center;
+      border-radius: 50%;
+    }
   }
 }
 .container {

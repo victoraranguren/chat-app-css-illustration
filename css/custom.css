@@ -141,6 +141,32 @@ body {
   height: auto;
   border-radius: 1em;
 }
+.main .chat-input {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  background: #fff;
+  color: #c6cacd;
+  padding: 0.5em 0.5em 0.5em 1.25em;
+  font-size: 0.75em;
+  border-radius: 2em;
+}
+.main .chat-input p {
+  display: inline-block;
+  margin: 0;
+}
+.main .chat-submit {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  background: #3e2753;
+  color: #fff;
+  line-height: 2em;
+  text-align: center;
+  border-radius: 50%;
+}
 
 .container {
   width: 90%;
