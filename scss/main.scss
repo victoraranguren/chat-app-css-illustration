@@ -13,17 +13,32 @@ body {
   display: flex;
   justify-content: center;
   padding: 4em 5%;
-  .bg-gradient{
+  .container {
+    @include mq($mq, md) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    @include mq($mq, xl) {
+      margin: 5%;
+      justify-content: space-evenly;
+    }
+  }
+  .bg-gradient {
     position: absolute;
-    top:0;
+    top: 0;
     left: -70%;
     width: 120%;
     height: 515px;
     display: inline-block;
     @include gradient-violet(bottom);
-    border-bottom-right-radius:60%;
-    border-bottom-left-radius:50%;
+    border-bottom-right-radius: 60%;
+    border-bottom-left-radius: 50%;
     z-index: 10;
+    @include mq($mq, md){
+      left: -100%;
+    }
   }
   // .bg-gradient-bottom{
   //   @extend .bg-gradient;
@@ -43,8 +58,9 @@ body {
     justify-content: center;
     flex-direction: column;
     width: 82%;
+    width: 15.625rem;
     height: auto;
-    font-size: .75em;
+    font-size: 0.75em;
     border: 0.85em solid #fff;
     border-radius: 2.5em;
     margin: 0 auto;
@@ -52,6 +68,16 @@ body {
     overflow: hidden;
     z-index: 20;
     @include shadow;
+    @include mq($mq, md) {
+      display: inline-block;
+      margin: 0;
+      margin-left: 0em;
+    }
+    @include mq($mq, lg) {
+      width: 15.625rem;
+      height: auto;
+      margin-left: 4em;
+    }
   }
   .top {
     display: flex;
@@ -111,7 +137,7 @@ body {
     }
   }
   // Messages Group
-  .messages-group{
+  .messages-group {
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -120,7 +146,7 @@ body {
   // Chat
   .chat {
     display: flex;
-    font-size: .5em;
+    font-size: 0.5em;
     padding: 1.5em;
     background: $light-grayish-violet;
     flex-direction: column;
@@ -161,7 +187,7 @@ body {
         margin-left: 0;
         margin-right: auto;
       }
-      .price{
+      .price {
         font-weight: 700;
         font-size: 1.25em;
       }
@@ -188,7 +214,7 @@ body {
         border-radius: 1em;
       }
     }
-    &-input{
+    &-input {
       width: 100%;
       display: flex;
       justify-content: space-between;
@@ -198,14 +224,14 @@ body {
       color: $grayish-blue;
       height: 4em;
       font-size: 1.5em;
-      padding: .5em .5em .5em 1.25em;
+      padding: 0.5em 0.5em 0.5em 1.25em;
       border-radius: 2.5em;
-      p{
+      p {
         display: inline-block;
         margin: 0;
       }
     }
-    &-submit{
+    &-submit {
       display: inline-block;
       width: 2em;
       height: 2em;
@@ -217,15 +243,33 @@ body {
     }
   }
   // Info
-  .title{
+  .info {
+    @include mq($mq, md) {
+      position: relative;
+      display: inline-block;
+      width: 55%;
+      z-index: 11;
+    }
+    @include mq($mq, md) {
+      width: 39%;
+    }
+  }
+  .title {
     font-size: 2.65em;
     color: $very-dark-desaturated-violet;
+    text-align: center;
+    @include mq($mq, md) {
+      text-align: left !important;
+    }
   }
-  .text{
+  .text {
     text-align: center;
     color: $dark-grayish-violet;
     font-size: 1.05em;
     line-height: 1.5em;
+    @include mq($mq, md) {
+      text-align: left !important;
+    }
   }
 }
 .container {
