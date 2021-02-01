@@ -13,16 +13,22 @@ body {
   padding: 4em 5%;
 }
 @media screen and (min-width: 768px) {
+  .main {
+    height: 100vh;
+  }
+}
+@media screen and (min-width: 768px) {
   .main .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: auto 5%;
   }
 }
 @media screen and (min-width: 1200px) {
   .main .container {
-    margin: 5%;
+    margin: auto 5%;
     justify-content: space-evenly;
   }
 }
@@ -41,6 +47,15 @@ body {
 @media screen and (min-width: 768px) {
   .main .bg-gradient {
     left: -100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main .bg-gradient {
+    left: -11em;
+    width: 35em;
+    height: 43rem;
+    border-bottom-right-radius: 60%;
+    border-bottom-left-radius: 60%;
   }
 }
 .main .iphone {
@@ -239,7 +254,7 @@ body {
     z-index: 11;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .main .info {
     width: 39%;
   }

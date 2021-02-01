@@ -13,15 +13,19 @@ body {
   display: flex;
   justify-content: center;
   padding: 4em 5%;
+  @include mq($mq, md) {
+    height: 100vh;
+  }
   .container {
     @include mq($mq, md) {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      margin: auto 5%;
     }
     @include mq($mq, xl) {
-      margin: 5%;
+      margin: auto 5%;
       justify-content: space-evenly;
     }
   }
@@ -38,6 +42,13 @@ body {
     z-index: 10;
     @include mq($mq, md){
       left: -100%;
+    }
+    @include mq($mq, xl){
+      left: -11em;
+      width: 35em;
+      height: 43rem;
+      border-bottom-right-radius: 60%;
+      border-bottom-left-radius: 60%;
     }
   }
   // .bg-gradient-bottom{
@@ -250,7 +261,7 @@ body {
       width: 55%;
       z-index: 11;
     }
-    @include mq($mq, md) {
+    @include mq($mq, xl) {
       width: 39%;
     }
   }
