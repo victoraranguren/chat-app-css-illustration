@@ -7,3 +7,6 @@
 @mixin gradient-violet($direction){
   background: linear-gradient(to $direction, $bg-top-main, $light-violet);
 }
+@mixin shadow {
+  box-shadow: rgba(200,200,200,.5) 4px 4px 20px;
+}
