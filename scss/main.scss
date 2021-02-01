@@ -25,6 +25,17 @@ body {
     border-bottom-left-radius:50%;
     z-index: 10;
   }
+  // .bg-gradient-bottom{
+  //   @extend .bg-gradient;
+  //   background: /* $bg-bottom-main */ #ddd;
+  //   top: auto;
+  //   left: auto;
+  //   right: 0;
+  //   bottom: 0;
+  //   border-radius: 0;
+  //   border-top-right-radius:60%;
+  //   border-top-left-radius:50%;
+  // }
   // iPhone
   .iphone {
     position: relative;
@@ -37,7 +48,7 @@ body {
     border: 0.85em solid #fff;
     border-radius: 2.5em;
     margin: 0 auto;
-    margin-bottom: 4em;
+    margin-bottom: 5em;
     overflow: hidden;
     z-index: 20;
     @include shadow;
