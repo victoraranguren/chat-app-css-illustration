@@ -12,7 +12,20 @@ body {
   justify-content: center;
   padding: 4em 5%;
 }
+.main .bg-gradient {
+  position: absolute;
+  top: 0;
+  left: -70%;
+  width: 120%;
+  height: 515px;
+  display: inline-block;
+  background: linear-gradient(to bottom, #e942ff, #8838ff);
+  border-bottom-right-radius: 60%;
+  border-bottom-left-radius: 50%;
+  z-index: 10;
+}
 .main .iphone {
+  position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -23,6 +36,7 @@ body {
   border-radius: 2.5em;
   margin: 0 auto;
   overflow: hidden;
+  z-index: 20;
 }
 .main .top {
   display: flex;
